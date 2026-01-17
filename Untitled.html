@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>五行相生相剋圖</title>
+    <style>
+        body { font-family: 'Microsoft JhengHei', sans-serif; text-align: center; }
+        svg { border: 1px solid #ccc; }
+        .element { font-size: 20px; font-weight: bold; }
+        table { margin: auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>中國傳統文化：五行相生相剋圖</h1>
+    <svg width="600" height="600" viewBox="-150 -150 300 300">
+        <!-- 箭頭定義 -->
+        <defs>
+            <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L0,6 L9,3 z" fill="green" />
+            </marker>
+            <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L0,6 L9,3 z" fill="red" />
+            </marker>
+        </defs>
+        
+        <!-- 五行位置：五角星頂點排列 -->
+        <!-- 水 (藍色，北方) -->
+        <circle cx="0" cy="-120" r="30" fill="blue" />
+        <text x="0" y="-115" class="element" fill="white" text-anchor="middle">水</text>
+        <!-- 木 (綠色，東方) -->
+        <circle cx="114.1" cy="-37.1" r="30" fill="green" />
+        <text x="114.1" y="-32.1" class="element" fill="white" text-anchor="middle">木</text>
+        <!-- 火 (紅色，南方) -->
+        <circle cx="70.5" cy="97.1" r="30" fill="red" />
+        <text x="70.5" y="102.1" class="element" fill="white" text-anchor="middle">火</text>
+        <!-- 土 (啡色，中央) -->
+        <circle cx="-70.5" cy="97.1" r="30" fill="brown" />
+        <text x="-70.5" y="102.1" class="element" fill="white" text-anchor="middle">土</text>
+        <!-- 金 (金色，西方) -->
+        <circle cx="-114.1" cy="-37.1" r="30" fill="gold" />
+        <text x="-114.1" y="-32.1" class="element" fill="white" text-anchor="middle">金</text>
+        
+        <!-- 相生箭頭 (綠色實線)：木 → 火 → 土 → 金 → 水 → 木 -->
+        <line x1="104.9" y1="-8.6" x2="85.4" y2="51.4" stroke="green" stroke-width="2" marker-end="url(#arrow-green)" />
+        <line x1="40.5" y1="97.1" x2="-22.5" y2="97.1" stroke="green" stroke-width="2" marker-end="url(#arrow-green)" />
+        <line x1="-79.8" y1="68.6" x2="-99.3" y2="8.6" stroke="green" stroke-width="2" marker-end="url(#arrow-green)" />
+        <line x1="-89.9" y1="-54.7" x2="-38.8" y2="-91.8" stroke="green" stroke-width="2" marker-end="url(#arrow-green)" />
+        <line x1="24.3" y1="-102.4" x2="75.3" y2="-65.3" stroke="green" stroke-width="2" marker-end="url(#arrow-green)" />
+        
+        <!-- 相剋箭頭 (紅色虛線)：木 → 土 → 水 → 火 → 金 → 木 -->
+        <line x1="89.9" y1="-19.4" x2="-31.7" y2="68.9" stroke="red" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-red)" />
+        <line x1="-61.3" y1="68.6" x2="-14.8" y2="-74.3" stroke="red" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-red)" />
+        <line x1="9.3" y1="-91.5" x2="55.7" y2="51.4" stroke="red" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-red)" />
+        <line x1="46.3" y1="79.4" x2="-75.3" y2="-8.9" stroke="red" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-red)" />
+        <line x1="-84.1" y1="-37.1" x2="66.1" y2="-37.1" stroke="red" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-red)" />
+    </svg>
+    
+    <h2>五行對應表</h2>
+    <table>
+        <tr>
+            <th>五行</th>
+            <th>顏色</th>
+            <th>人體臟腑</th>
+            <th>季節</th>
+            <th>地理方位</th>
+        </tr>
+        <tr>
+            <td>木</td>
+            <td>綠色</td>
+            <td>肝、膽</td>
+            <td>春</td>
+            <td>東</td>
+        </tr>
+        <tr>
+            <td>火</td>
+            <td>紅色</td>
+            <td>心、小腸</td>
+            <td>夏</td>
+            <td>南</td>
+        </tr>
+        <tr>
+            <td>土</td>
+            <td>啡色</td>
+            <td>脾、胃</td>
+            <td>長夏</td>
+            <td>中</td>
+        </tr>
+        <tr>
+            <td>金</td>
+            <td>金色</td>
+            <td>肺、大腸</td>
+            <td>秋</td>
+            <td>西</td>
+        </tr>
+        <tr>
+            <td>水</td>
+            <td>藍色</td>
+            <td>腎、膀胱</td>
+            <td>冬</td>
+            <td>北</td>
+        </tr>
+    </table>
+    
+    <h3>說明</h3>
+    <p>綠色實線箭頭表示相生（順生）邏輯：木生火、火生土、土生金、金生水、水生木。</p>
+    <p>紅色虛線箭頭表示相剋（制衡）邏輯：木剋土、土剋水、水剋火、火剋金、金剋木。</p>
+    
+</body>
+</html>
